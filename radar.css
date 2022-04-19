@@ -1,0 +1,189 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("background.jpeg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .btn {
+position: absolute;
+top: 45%;
+left: 30%;
+transform: translate(-20%, -20%);
+-ms-transform: translate(-20%, -20%);
+background-color: #000000;
+color: white;
+border: none;
+cursor: pointer;
+text-align: center;
+padding: 20px;
+display: inline-block;
+font-size: 20px;
+margin: 4px 2px;
+cursor: pointer;
+display: inline-block;
+	overflow: hidden;
+  width: 100px;
+	perspective:400px;
+  
+  -webkit-box-reflect: below 0px -
+  webkit-gradient(linear, left top, left bottom, from(transparent), color-
+  stop(50%, transparent), 
+  to(rgba(255,255,255,0.3)));
+}
+
+.btn span{
+	display: block;
+	position: relative;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+  transform-style:preserve-3d;
+	background-color: black;
+	color: white;
+  width: 100%;
+
+}
+.btn span:after{
+	display: block;
+	content: attr(data-title);
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+	transform:translate3d(0px,105%,0px) rotateX(-90deg);
+	
+	color: white;
+  width: 100%;
+}
+
+.btn:hover span{
+	transform:translate3d(0px,0px,-30px) rotateX(90deg);
+}
+
+.btn1 {
+    position: absolute;
+    top: 45%;
+    right: 27%;
+    transform: translate(-20%, -20%);
+    -ms-transform: translate(-20%, -20%);
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: inline-block;
+        overflow: hidden;
+      width: 100px;
+        perspective:400px;
+      
+      -webkit-box-reflect: below 0px -
+      webkit-gradient(linear, left top, left bottom, from(transparent), color-
+      stop(50%, transparent), 
+      to(rgba(255,255,255,0.3)));
+    }
+    
+    .btn1 span{
+        display: block;
+        position: relative;
+        transition:0.3s ease-in-out all;
+        transform-origin:50% 0;
+      transform-style:preserve-3d;
+        background-color: black;
+        color: white;
+      width: 100%;
+    
+    }
+    .btn1 span:after{
+        display: block;
+        content: attr(data-title);
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition:0.3s ease-in-out all;
+        transform-origin:50% 0;
+        transform:translate3d(0px,105%,0px) rotateX(-90deg);
+        
+        color: white;
+      width: 100%;
+    }
+    
+    .btn1:hover span{
+        transform:translate3d(0px,0px,-30px) rotateX(90deg);
+    }
+
+    .text-block {
+        position: absolute;
+        top: 100px;
+        left: 200px;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .text-block1 {
+        position: absolute;
+        top: 100px;
+        right: 200px;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .namebutton {
+        background-color: #000000;
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        position: relative;
+  display: inline-block;
+      }
+
+
+      .namebutton .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: rgb(51, 3, 3);
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+      
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+      }
+      
+      .namebutton:hover .tooltiptext {
+        visibility: visible;
+      }
